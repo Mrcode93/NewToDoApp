@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(-120deg, #de0d0df4, rgb(227, 38, 139));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box {
+    width: 600px;
+    min-height: 400px;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.box h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgba(253, 253, 253, 0.537);
+}
+
+.box .input {
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input input[type="text"] {
+    width: 100%;
+    height: 40%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(39, 87, 220, 0.258);
+}
+
+.input input[type="button"] {
+    width: 100%;
+    border: none;
+    height: 40%;
+    outline: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(39, 87, 220);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input[type="button"]:active {
+    outline: none;
+    background-color: rgb(63, 109, 236);
+}
+
+.tasks {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tasks li {
+    list-style: none;
+    width: 90%;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* li p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    z-index: 3;
+} */
+
+.btns {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.delBtn {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(248, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px
+}
+
+.completeBtn {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(44, 220, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px
+}
+
+.completed {
+    opacity: 0.5;
+}
